@@ -87,3 +87,81 @@ print(result)
 
 result = not b # True
 print(result)
+
+age = 20 
+has_permission = False
+
+if age >= 18:
+    if has_permission:
+        print("Access granted")
+    else:
+        print("Access Denied")
+else: 
+    print("Access Denied")
+
+if age >= 18 and has_permission:
+    print("Access Granted")
+else:
+    print("Access denied")
+
+# Tenary Operator
+Condense series of code to one line, where applicable 
+
+age = 20 
+has_permission = False
+
+print("Access Granted" if age >= 18 and has_permission else "Access Denied")
+
+temperature = 30
+
+<!-- # if temperature >  30:
+#     message = "It's Hot outside"
+# else:
+#     message= "It's not hot outside"
+
+# print(message) -->
+
+message = "It's hot outside" if temperature > 30 else "It's not hot outside"
+
+# Match-case
+Control flow, similar to switch statements in other programming languages
+
+day_number = 3
+
+match day_number:
+    case 1:
+        day_name = "Monday"
+    case 2: 
+        day_name = "Tuesday"
+    case 3: 
+        day_name = "Wednesday"
+    case 4:
+        day_name = "Thursday"
+
+print(day_name)
+
+
+# Activity
+Whites a python script that asks the user to input a numerical score and caterogrizes it into grade (A, B, C, D, F) based on the following:
+
+90-100: A
+80-89: B
+70-79: C
+60-69: D
+59 below: Fail
+
+<!-- # Prompt the user to enter a score -->
+score = int (input("Enter the score (0-100):"))
+
+if score >= 90 and score <= 100:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+elif score >= 60:
+    grade = "D"
+else:
+    grade = "F"
+
+print(f"The grade for score {score} is {grade}")
